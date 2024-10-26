@@ -1,0 +1,81 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+  6. Page Styles
+  7. Media Queries
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+* {
+    /* Colors */
+    --blue: #0D2B58;
+    --orange: #EB7923;
+    --yellow: #F6A800;
+    --aqua: #006BA6;
+
+    /* Fonts */
+    --headings: "Playfair Display";
+    --body: "Lato";
+}
+
+/* 2. Typography Styles
+======================================== */
+h1, h2 {
+    text-align: center;
+    font-family: var(--headings);
+}
+
+p, a {
+    font-family: var(--body);
+}
+
+/* 3. Structure Styles
+======================================== */
+
+
+/* 4. Modules Styles
+======================================== */
+/* Site Navigation */
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--aqua);
+    padding: 16px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+/* Site Footer */
+footer {
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+    background-color: var(--aqua);
+    padding: 15px;
+    color: white;
+    font-weight: 200;
+}
+
+/* 5. Component Styles
+======================================== */
+form {
+    
+}
+
+/* 6. Page Styles
+======================================== */
+
+
+/* 7. Media Queries
+======================================== */
