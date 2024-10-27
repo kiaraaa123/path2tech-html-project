@@ -16,6 +16,7 @@
     --orange: #EB7923;
     --yellow: #F6A800;
     --aqua: #006BA6;
+    --lightgray: #D3D3D3;
 
     /* Fonts */
     --headings: "Playfair Display";
@@ -24,18 +25,20 @@
 
 /* 2. Typography Styles
 ======================================== */
-h1, h2 {
+h1, h2, th {
     text-align: center;
     font-family: var(--headings);
 }
 
-p, a {
+p, a, label, input, td {
     font-family: var(--body);
 }
 
 /* 3. Structure Styles
 ======================================== */
-
+.currentMembers {
+    padding-top: 16px;
+}
 
 /* 4. Modules Styles
 ======================================== */
@@ -56,21 +59,79 @@ nav a {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
+
+nav a:hover {
+    background-color: var(--orange);
+}
+
 /* Site Footer */
 footer {
-    display: block;
-    margin: 50px auto;
+    margin: 50px 0;
     text-align: center;
     background-color: var(--aqua);
-    padding: 15px;
+    padding: 15px 0;
     color: white;
     font-weight: 200;
+    width: 100%;
 }
 
 /* 5. Component Styles
 ======================================== */
-form {
-    
+form, table {
+    width: 80%;
+    margin: 32px auto;
+}
+
+input, label {
+    display: block;
+    padding: 2px;
+    width: calc(100% - 8px);
+}
+
+label:first-of-type {
+    padding-top: 0;
+}
+
+label {
+    margin: 1rem 0 0.25rem;
+}
+
+input {
+    border: 2px solid var(--blue);
+    font-family: var(--body);
+    height: 1.5rem;
+}
+
+input[type="submit"] {
+    height: auto;
+    width: 70%;
+    padding: 0.5rem;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 24px auto;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--orange);
+    cursor: pointer;
+}
+
+th, td {
+    border: 1px solid var(--blue);
+    padding: 2px;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+thead {
+    background-color: var(--yellow);
+}
+
+tr:nth-child(even) {
+    background-color: var(--lightgray);
 }
 
 /* 6. Page Styles
