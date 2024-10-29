@@ -126,7 +126,7 @@ th, td {
     margin: 0;
 }
 
-thead {
+.header {
     background-color: var(--yellow);
 }
 
